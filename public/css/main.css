@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+:root {
+  box-sizing: border-box;
+  --facebook-bg: #178ff5;
+  --twitter-bg: #1da1f2;
+  --instagram-bg: linear-gradient(90deg, rgba(253,195,102,1) 0%, rgba(238,135,126,1) 50%, rgba(223,72,150,1) 100%);
+  --youtube-bg: #c4032b;
+  --toggle-bg: #aeb2ca;
+  --toggle-active-bg: linear-gradient(90deg, rgba(59,153,215,1) 0%, rgba(83,199,145,1) 100%);
+  --count-increase-color: #1eb589;
+  --count-decrease-color: #dc414c;
+  /* light theme */
+  --bg: hsl(0, 0%, 100%);
+  --header-bg: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --normal-color: hsl(228, 12%, 44%);
+  --bold-color: hsl(230, 17%, 14%);
+  /* dark theme */
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-header-bg: hsl(232, 19%, 15%);
+  --dark-card-bg: hsl(228, 28%, 20%);
+  --dark-normal-color: hsl(228, 34%, 66%);
+  --dark-bold-color: hsl(0, 0%, 100%);
+}
+
+/*# sourceMappingURL=main.css.map */

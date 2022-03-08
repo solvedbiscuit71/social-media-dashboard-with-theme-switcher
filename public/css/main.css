@@ -15,20 +15,13 @@
   --toggle-active-bg: linear-gradient(90deg, rgba(59,153,215,1) 0%, rgba(83,199,145,1) 100%);
   --count-increase-color: #1eb589;
   --count-decrease-color: #dc414c;
-  /* light theme */
+  /* theme */
   --bg: hsl(0, 0%, 100%);
   --header-bg: hsl(225, 100%, 98%);
   --card-bg: hsl(227, 47%, 96%);
   --card-active-bg: rgba(225,227,240,255);
   --normal-color: hsl(228, 12%, 44%);
   --bold-color: hsl(230, 17%, 14%);
-  /* dark theme */
-  --dark-bg: hsl(230, 17%, 14%);
-  --dark-header-bg: hsl(232, 19%, 15%);
-  --dark-card-bg: hsl(228, 28%, 20%);
-  --dark-card-active-bg: rgba(51,58,86,255);
-  --dark-normal-color: hsl(228, 34%, 66%);
-  --dark-bold-color: hsl(0, 0%, 100%);
 }
 
 /* global rules */
@@ -36,6 +29,8 @@ body {
   margin: 0;
   padding: 0;
   --global-padding: 1.5rem;
+  min-height: 100vh;
+  background-color: var(--bg);
 }
 
 header {
@@ -67,13 +62,13 @@ section {
 }
 
 /* toggle button */
-.toggle-btn--off {
+.toggle-btn--light {
   position: absolute;
   top: 4px;
   left: 4px;
 }
 
-.toggle-btn--on {
+.toggle-btn--dark {
   position: absolute;
   top: 4px;
   right: 4px;
@@ -89,13 +84,13 @@ section {
 .toggle-btn span {
   min-width: 1em;
   height: 1em;
-  background-color: white;
+  background-color: var(--header-bg);
   border-radius: 50%;
 }
 
 .toggle-btn:hover {
   cursor: pointer;
-  background-image: var(--toggle-active-bg);
+  background-image: var(--toggle-active-bg) !important;
 }
 
 /* card */
@@ -235,6 +230,7 @@ section {
 
 .views > span {
   font-size: 2rem;
+  color: var(--bold-color);
 }
 
 /* view count */

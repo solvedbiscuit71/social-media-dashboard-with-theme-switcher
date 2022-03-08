@@ -366,3 +366,19 @@ section {
   
   margin-block: 1.75em;
 }
+
+/* tablet view */
+
+@media only screen and (min-width:768px) {
+  .card-grid {
+    grid-template-columns: repeat(2,20em);
+  }
+
+  .overview-grid {
+    grid-template-columns: repeat(2,20em);
+  }
+
+  .overview-grid h2 {
+    grid-column: span 2;
+  }
+}

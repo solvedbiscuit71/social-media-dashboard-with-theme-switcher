@@ -55,7 +55,7 @@ main {
   z-index: 5;
 }
 
-section {
+main > * {
   position: relative;
   z-index: 7;
   margin-block-end: 3em;

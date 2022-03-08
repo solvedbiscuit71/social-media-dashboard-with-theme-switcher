@@ -63,9 +63,10 @@ main {
 
   position: relative;
   z-index: 5;
+
 }
 
-section {
+main > * {
   position: relative;
   z-index: 7;
 

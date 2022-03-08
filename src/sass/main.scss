@@ -376,9 +376,49 @@ section {
 
   .overview-grid {
     grid-template-columns: repeat(2,20em);
+
+    h2 {
+      grid-column: span 2;
+    }
   }
 
-  .overview-grid h2 {
-    grid-column: span 2;
+}
+
+/* desktop view */
+
+@media only screen and (min-width:1400px) {
+  .header-flex {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 1096px;
+    margin-inline: auto;
   }
+
+  .header-title::after {
+    display: none;
+  }
+
+  .header-toggle {
+    justify-content: flex-end;
+    gap: 1em;
+
+    align-items: center;
+  }
+
+
+  .card-grid {
+    grid-template-columns: repeat(4,16em);
+  }
+
+  .overview-grid {
+    grid-template-columns: repeat(4,16em);
+
+    h2 {
+      grid-column: span 4;
+    }
+  }
+
 }
